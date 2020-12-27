@@ -47,7 +47,7 @@ func handleRequests() {
 
 func main() {
 
-	fmt.Println("Connecting to NEXTBEST.AI APIs by SNAILWALK.CO")
+	fmt.Println("Connecting to NEXTBEST.AI APIs by CIAOKIT.COM")
 
 	// MySQLdb, err := sql.Open("mysql", "vmc:vmc$n@il@tcp(aisecoupons.snailwalk.co:3306)/AISDB")
 
@@ -62,9 +62,9 @@ func main() {
 
 	// defer MySQLdb.Close()
 
-	fmt.Println("=========================================")
-	fmt.Println("NEXTBEST.AI FEE CALCULATORService STARTED")
-	fmt.Println("=========================================")
+	fmt.Println("============================================")
+	fmt.Println(" NEXTBEST.AI FEE CALCULATOR Service STARTED")
+	fmt.Println("============================================")
 	//	fmt.Println(strconv.Itoa(int(time.Now().Unix())))
 
 	//	InitialMigration()
