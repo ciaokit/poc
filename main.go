@@ -25,9 +25,10 @@ func helloWorld(w http.ResponseWriter, r *http.Request) {
 func handleRequests() {
 	myRouter := mux.NewRouter().StrictSlash(true)
 	myRouter.HandleFunc("/", helloWorld).Methods("GET")
-	//	myRouter.HandleFunc("/Coupons", AllCoupons).Methods("GET")
+
+	// myRouter.HandleFunc("/gigest", AllCoupons).Methods("GET")
 	//	myRouter.HandleFunc("/Search/{id}", GetCoupon).Methods("GET")
-	//	myRouter.HandleFunc("/Use/{id}/{terminalid}/{sku}/{ref}", UseCoupon).Methods("POST")
+	myRouter.HandleFunc("/GenerateDigest", GenerateDigest).Methods("POST")
 	// myRouter.HandleFunc("/Use/Staff/{id}/{terminalid}/{sku}/{ref}", UseCouponStaff).Methods("POST")
 	// myRouter.HandleFunc("/Use/Customer/{id}/{terminalid}/{sku}/{ref}", UseCouponCustomer).Methods("POST")
 	// myRouter.HandleFunc("/Use/Staff/{id}/{terminalid}/{sku}/{ref}/{amount}", UseCouponStaffMySQL).Methods("POST")
